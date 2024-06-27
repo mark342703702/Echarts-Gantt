@@ -40,23 +40,23 @@ export const gantConfig = {
     top: 50,
     left: 90,
     right: 0,
-    bottom: 30
+    bottom: 30,
   },
 
   //任务默认样式，可以传参合并
   taskStyle: {
     rectStyle: {
-      fill: "rgba(74, 204, 255,1)"
+      fill: "rgba(74, 204, 255,1)",
     },
     textStyle: {
       color: "#ffffff",
       textVerticalAlign: "middle",
       textAlign: "center",
       textFill: "#ffffff",
-      fontSize: 11,
+      fontSize: 16,
       overflow: "truncate",
-      ellipsis: ".."
-    }
+      ellipsis: "..",
+    },
   },
 
   //色块宽度小于多少像素就隐藏文字
@@ -73,5 +73,5 @@ export const gantConfig = {
   disabled: false, // 禁用
   MOVE_THROTTLE: 30,
   MULTIPLE_CHOICE: true, // 是否多选
-  isMove: false
+  isMove: false,
 };

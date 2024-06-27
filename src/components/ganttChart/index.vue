@@ -73,6 +73,11 @@ export default {
       type: Boolean,
       default: true,
     },
+    //是否允许多选
+    multiChoose: {
+      type: Boolean,
+      default: false,
+    },
   },
   data() {
     return {
@@ -163,7 +168,7 @@ export default {
       };
 
       //  过滤微小移动,防止误操作
-      if (Math.abs(cursors.offsetX) > 20 || Math.abs(cursors.offsetY) > 20) {
+      if (Math.abs(cursors.offsetX) > 80) {
         this.mouseStatus.isMove = true;
         this.freshElPosition(cursors);
         // console.log(cursors);
@@ -349,6 +354,7 @@ export default {
                 if (item.unitId === recordParam.data.unitId) {
                   //是否选中，选中为userSelected, 未选中为空
                   item.selectedType = true;
+                  //记录开始拖拽的位置
                   item.chartPostions = [
                     {
                       startPointX: i.value[this.gantConfig.TIME_START],
@@ -362,7 +368,7 @@ export default {
                   item.selectedType = false;
                 }
               });
-              console.log(seriesData);
+              // console.log(seriesData);
               this.selectRows = seriesData
                 .filter((i) => i.value[4].selectedType)
                 .sort((a, b) => {
@@ -399,7 +405,7 @@ export default {
       this.Gant.chart.getZr().on("mousedown", (event) => {
         // console.log("Zrmousedown2", event);
 
-        if (this.lockGantt) {
+        if (this.lockGantt || !this.multiChoose) {
           return;
         }
 
@@ -524,6 +530,7 @@ export default {
       if (this.handleDrag) {
         this.handleDrag(moveData, seriesData, goBackDrag);
       }
+      this.clearMultipleList();
     },
     resizeHanlder() {
       if (this?.Gant?.chart) {
