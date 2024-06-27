@@ -9,7 +9,12 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "vue": "^2.6.14"
+    "dayjs": "1.9.3",
+    "echarts": "^5.5.0",
+    "element-ui": "2.13.2",
+    "lodash": "^4.17.21",
+    "vue": "^2.6.14",
+    "vue-router": "3.4.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -26,10 +31,7 @@
     "env": {
       "node": true
     },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
+    "extends": [],
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
