@@ -1,0 +1,1 @@
+import{_ as t,c as d,o as e,a3 as a}from"./chunks/framework.DpFyhY0e.js";const x=JSON.parse('{"title":"甘特图组件文档","description":"","frontmatter":{},"headers":[],"relativePath":"guide.md","filePath":"guide.md"}'),r={name:"guide.md"},i=a("",11),o=[i];function h(n,s,l,b,u,c){return e(),d("div",null,o)}const _=t(r,[["render",h]]);export{x as __pageData,_ as default};

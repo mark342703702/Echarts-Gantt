@@ -10,7 +10,7 @@
 
 ## 尝试一下
 
-[点击查看效果](http://localhost:8080/#/base)
+[点击查看效果](https://mark342703702.github.io/Echarts-Gantt//#/base)
 
 **config.js**
 
