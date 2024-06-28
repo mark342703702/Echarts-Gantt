@@ -1,24 +1,19 @@
 # echarts-gantt
 
-## Project setup
+## 先装依赖包
+
 ```
-yarn install
+yarn
 ```
 
-### Compiles and hot-reloads for development
+### 启动文档
+
 ```
-yarn serve
+npm run docs:dev
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
+### 启动项目
 
-### Lints and fixes files
 ```
-yarn lint
+npm run serve
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
