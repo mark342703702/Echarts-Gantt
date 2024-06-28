@@ -12,6 +12,9 @@ hero:
     - theme: brand
       text: 快速开始
       link: /quick
+    - theme: alt
+      text: View on GitHub
+      link: https://github.com/mark342703702/Echarts-Gantt
 
 features:
   - icon:
